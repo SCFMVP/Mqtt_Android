@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Android教学楼标号"
+        android:textColor="#444"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/descTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTv"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:minLines="1"
+        android:text="Android为ListView和GridView打造万能适配器,教学楼简介, 教室分类及其数量"
+        android:textColor="#898989"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/timeTv"
+        android:paddingTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descTv"
+        android:layout_marginTop="10dp"
+        android:text="2015-05-04"
+        android:textColor="#898989"
+        android:textSize="12sp" />
+
+    <TextView
+        android:padding="2dp"
+        android:id="@+id/phoneTv"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descTv"
+        android:layout_marginTop="10dp"
+        android:background="#16e2d1"
+        android:drawableLeft="@mipmap/xieyi_mqtt"
+        android:drawablePadding="5dp"
+        android:text="MQTT"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>

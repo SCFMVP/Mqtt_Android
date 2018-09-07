@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="LogFront">#f5f2f3</color>
+    <color name="textColor">#7c7175</color>
+    <color name="red">#f70814</color>
+    <color name="black">#060606</color>
+    <color name="orange">#f76319</color>
+    <color name="blue">#52ecfa</color>
+
+</resources>

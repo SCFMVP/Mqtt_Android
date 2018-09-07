@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CR_Mqtt</string>
+    <string name="action_settings">退出</string>
+    <string name="app_login">登录配置</string>
+    <string name="cr_list">教室列表</string>
+    <string name="cr_shouye">首页</string>
+</resources>

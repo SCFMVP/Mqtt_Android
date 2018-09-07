@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/h_back"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        <ImageView
+            android:id="@+id/h_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/h_back"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/user_line"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_line"
+                android:text="admin"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/user_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/user_line"
+                android:text="13815014565"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.example.administrator.cr_mqtt.ItemView
+                android:id="@+id/nickName"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:left_icon="@drawable/ic_nick_name"
+                app:left_text="用户名"
+                app:right_text="admin"
+                />
+
+            <com.example.administrator.cr_mqtt.ItemView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:left_icon="@drawable/ic_sex"
+                app:left_text="性别"
+                app:right_text="男" />
+
+            <com.example.administrator.cr_mqtt.ItemView
+                android:id="@+id/signName"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:left_icon="@drawable/ic_sign_name"
+                app:left_text="职务"
+                app:right_text="59号楼楼管" />
+
+            <com.example.administrator.cr_mqtt.ItemView
+                android:id="@+id/pass"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:left_icon="@drawable/ic_pass"
+                app:left_text="修改密码"
+                app:right_text="" />
+            <com.example.administrator.cr_mqtt.ItemView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:left_icon="@drawable/ic_phone"
+                app:left_text="联系作者"
+                app:right_text="" />
+
+            <com.example.administrator.cr_mqtt.ItemView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:left_icon="@drawable/ic_about"
+                app:left_text="使用说明"
+                app:right_text="" />
+            <com.example.administrator.cr_mqtt.ItemView
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:left_icon="@mipmap/update"
+                app:left_text="检查更新"
+                app:right_text="" />
+
+            <com.example.administrator.cr_mqtt.ItemView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:left_icon="@mipmap/about"
+                app:left_text="版本"
+                app:right_text="1.0.0.1" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="\n\n\"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/orange"
+                android:onClick="ExitButtonCallback"
+                android:text="退 出"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="\n\n\n\n"/>
+
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
